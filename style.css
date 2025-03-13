@@ -32,3 +32,16 @@ body{
     background-color: red;
     transition: 0.25s;
 }
+
+.dot{
+    width: 5px;
+    aspect-ratio: 1/1;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.candle{
+    width: 3px;
+    position: absolute;
+}
