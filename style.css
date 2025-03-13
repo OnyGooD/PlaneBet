@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#game{
+    width: 500px;
+    aspect-ratio: 1/1;
+    border-left: 5px dashed black;
+    border-bottom: 5px dashed black;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    background: skyblue;
+    position: relative;        
+}
+
+.plane{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+}
