@@ -30,5 +30,5 @@ body{
     bottom: 0;
     left: 0;
     background-color: red;
-    transition: 1s;
+    transition: 0.25s;
 }

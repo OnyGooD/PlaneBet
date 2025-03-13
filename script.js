@@ -9,15 +9,22 @@ let x = 0;
 let y = 0;
 let flyUp = true
 
-setInterval(() => {
-    x+= 2;
+const intervalID = setInterval(() => {
+    if(y <= 0 && !flyUp){
+        y = 0
+        planeEl.style.bottom = y + "px";
+        planeEl.innerText = "💥";
+        clearInterval(intervalID);
+    }
+
+    x+= 5;
     if(flyUp){
-        y += Math.floor(Math.random() * 10);
+        y += (Math.floor(Math.random() * 10)) * 3;
         if(y > 100) flyUp = false;
         }else{
-            y += Math.floor(Math.random() * 10)-5;
+            y += (Math.floor(Math.random() * 10)-5) * 3;
         }
-    
     planeEl.style.left = x + "px";
     planeEl.style.bottom = y + "px";
-},100)
+},200)
+
