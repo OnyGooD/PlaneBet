@@ -12,9 +12,12 @@
         <h1>x<span id="multiplier"></span></h1>
     </div>
     <div class="control">
-        <input type="range" id="slider" min="0">
+        <input type="range" onchange="sliderChange()" value="0" id="slider" min="0">
+        <h2 id="bet">0 🎲</h2>
         <h2 id="money"></h2>
-        <button onclick="start()" id="betBtn">BET 🤑</button>
+        <button onclick="stop()" id="stopBtn">STOP 🛑</button>
+        <button onclick="start()" id="betBtn">GO 🤑</button>
+
     </div>
 </body>
 </html>
